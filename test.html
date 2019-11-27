@@ -1,0 +1,145 @@
+<html>  
+<head>  
+<title>进度条</title>  
+<style type="text/css">  
+
+/* 进度条 */
+/* .processcontainer{  
+   width:450px;  
+   border:1px solid #6C9C2C;  
+   height:25px;  
+ } 
+#processbar{  
+   background:#95CA0D;  
+   float:left; 
+   height:100%;  
+   text-align:center;  
+   line-height:150%; 
+ } */ 
+ 
+ 
+ #bigBox{
+	width: 900px;
+	height: 400px;
+	border: 1px solid black;
+	position: relative;
+	left: 120px;
+	overflow: hidden;
+ }
+ #box1{
+	width: 400px;
+	height: 400px;
+	background: red;
+	position: absolute;
+	top: 0;
+	left: -230px;
+ }
+ #box2{
+	width: 400px;
+	height: 400px;
+	background: blue;
+	position: absolute;
+	top: 0;
+	left:250px ;
+	 
+ }
+ #box3{
+	width: 400px;
+	height: 400px;
+	background: green;
+	position: absolute;
+	top: 0;
+	right:-230px ;
+ }
+ #btn-left{
+	 width: 50px;
+	 height: 50px;
+	 position: absolute;
+	 left: 180px;
+	 top: 175px;
+	 text-align: center;
+	 line-height: 50px;
+	 background: orange;
+ }
+ #btn-right{
+ 	 width: 50px;
+ 	 height: 50px;
+ 	 position: absolute;
+ 	 right: 180px;
+ 	 top: 175px;
+ 	 text-align: center;
+ 	 line-height: 50px;
+ 	 background: orange;
+ }
+</style>  
+ 
+</head>  
+<body>  
+<!-- 点击轮播图练习 -->
+
+<div id="bigBox">
+	<div id="box1">
+		
+	</div>
+	
+	
+	
+	<div id="box2">
+		
+	</div>
+	<div id="box3">
+		
+	</div>
+	<div id="box4">
+		
+	</div>
+	<div id="btn-left">
+		<
+	</div>
+	<div id="btn-right">
+		>
+	</div>
+</div>
+
+
+
+<!-- 进度条 -->
+  <!-- <div class="processcontainer">  
+   <div id="processbar" style="width:0%;"></div>  
+  </div>  -->
+</body>  
+</html>
+<script src="JS/JQuery.js"></script>
+<script type="text/javascript">  
+//轮播图点击练习
+
+// $(function(){
+	$("#btn-left").click(function(){
+		$("#box1").css(left:)
+			$("#box3").animate({
+				left:250
+			},1000)
+			$("#box2").animate({
+				left:-230
+			},1000)
+			
+		
+	})
+// })
+
+
+
+//进度条
+//  function setProcess(){  
+//   var processbar = document.getElementById("processbar");  
+//   processbar.style.width = parseInt(processbar.style.width) + 1 + "%";
+//   // processbar.innerHTML = processbar.style.width;  
+//   if(processbar.style.width == "100%"){  
+//      window.clearInterval(bartimer);  
+//   }  
+//  }  
+// var bartimer = window.setInterval(function(){setProcess();},100);  
+// window.onload = function(){  
+//    bartimer;  
+// }  
+</script> 
